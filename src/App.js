@@ -12,22 +12,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://172.19.0.2:8080/users")
-      .then(res => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            users: result.items
-          });
-        },
-        (error) => {
-          console.log('Erro ao consultar os Usuarios --> ' + error.message);
-          this.setState({
-            isLoaded: true,
-          });
-        }
-      )
+
+    fetch('http://172.19.0.2:8080/users')
+      .then(response => response.json())
+      .then(data => this.setState({users : data,isLoaded: true, })
+    );
   }
   
   render() {
