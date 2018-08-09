@@ -26,12 +26,12 @@ class App extends Component {
     const fields = [
       { name: 'username', displayName: "Username", inputFilterable: true, sortable: true },
       { name: 'password', displayName: "Password", inputFilterable: false, sortable: false },
-      { name: 'registerDate', displayName: "Register Date", inputFilterable: false, sortable: false },
+      { name: 'registerDateFormated', displayName: "Register Date", inputFilterable: false, sortable: false },
       { name: 'name', displayName: "Name", inputFilterable: true, sortable: true },
       { name: 'surname', displayName: "Surname", inputFilterable: false, sortable: false },
       { name: 'email', displayName: "Email", inputFilterable: true, sortable: true },
       { name: 'fone', displayName: "Fone", inputFilterable: false, sortable: false },
-      { name: 'enabled', displayName: "Enabled", inputFilterable: false, sortable: false },
+      { name: 'enabledFormated', displayName: "Enabled", inputFilterable: false, sortable: false },
     ];
 
     return (
