@@ -13,7 +13,7 @@ class App extends Component {
 
   componentDidMount() {
 
-    fetch('http://172.19.0.2:8080/users')
+    fetch('http://localhost:8080/users')
       .then(response => response.json())
       .then(data => this.setState({users : data,isLoaded: true, })
     );
@@ -22,14 +22,6 @@ class App extends Component {
   render() {
 
     const FilterableTable = require('react-filterable-table');
-
-    const data = [
-      { name: "Steve", age: 27, job: "Sandwich Eater" },
-      { name: "Gary", age: 35, job: "Falafeler" },
-      { name: "Greg", age: 24, job: "Jelly Bean Juggler" },
-      { name: "Jeb", age: 39, job: "Burrito Racer" },
-      { name: "Jeff", age: 48, job: "Hot Dog Wrangler" }
-    ];
 
     const fields = [
       { name: 'username', displayName: "Username", inputFilterable: true, sortable: true },
