@@ -13,7 +13,7 @@ class App extends Component {
 
   componentDidMount() {
 
-    fetch('http://localhost:8080/users')
+    fetch('http://172.19.0.2:8080/users')
       .then(response => response.json())
       .then(data => this.setState({users : data,isLoaded: true, })
     );
