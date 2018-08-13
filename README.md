@@ -1,3 +1,22 @@
+
+
+Essa é a aplicação (front-end) responsável por exibir os usuários utilizando a API de Usuários (users-services).
+
+Ela foi desenvolvida utilizando React e Node como http server
+
+Para subir a app é só executar o comando "npm start" (precisa ter Node instalado) na raiz do projeto.
+
+Para acessar só entrar no endereço :  http://localhost:3000/
+
+Basicamente quando a aplicação é acessada ela realiza um GET na API (http://172.19.0.2:8080/users) para obter a Lista de Usuarios e a armazena na propriedade "users".
+
+Para realizar as buscas de acordo com os filtros, utilizei o componente "FilterableTable" (https://www.npmjs.com/package/react-filterable-table)
+
+#################################################################################################
+
+- Abaixo um pequeno tutorial sobre o React :
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
